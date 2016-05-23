@@ -2,7 +2,7 @@ require 'sinatra'
 
 class MyWebApp < Sinatra::Base
   get '/' do
-    "This is my app! Just in case you arrived here from the past via flux capacitor technology, the current year is { Time.now.year }"
+    "This is my app! Just in case you arrived here from the past via flux capacitor technology, the current year is <%= Time.now.year %>"
   end
 
   get '/about' do
